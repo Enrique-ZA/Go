@@ -143,7 +143,7 @@ func main() {
 >- Delays function execution until the surrounding function finishes
 >- In case of multiple deferred functions, the execution order will be LIFO (last in,
 >- first out.
->- Guaranteed run - deferred functions are often used fir cleanup operations
+>- Guaranteed run - deferred functions are often used for cleanup operations
 >- A deferred function's parameters are evaluated first, then used later during the
 >- deferred function invocation
 ```go
