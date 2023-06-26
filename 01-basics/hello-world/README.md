@@ -31,7 +31,7 @@ var raw = `Hello, World!
 ## Basic data types in Go:
 >- _numbers, strings, booleans_
 >- **Composite types**: _arrays, structs, pointers, functions, interfaces, slices, maps,_ 
->  _and channels_
+>- _and channels_
 >- int8 (8 bits, -128 to 127)
 >- int16 (16 bits, -32768 to 32767)
 >- int32 (32 bits, -2147483648 to 2147483647)
@@ -44,12 +44,12 @@ var raw = `Hello, World!
 >- uint (system dependent, system dependent)
 >- **byte** is an alias for uint8 and **rune** is an alias for int32
 >- 2 floating point types: _float32_ and _float64_
->  f := 123.45 will be allocated as a _float64_
+>- f := 123.45 will be allocated as a _float64_
 >- **bool** is a boolean type - true or false 
->  uses &&, || and !
->  && and || follow short-circuiting rules
+>- uses &&, || and !
+>- && and || follow short-circuiting rules
 >- Unless explicity initialized, vars are automatically initialized with their zero value
->  Integer (0), Floating point (0.0), Boolean (false), String ("")
+>- Integer (0), Floating point (0.0), Boolean (false), String ("")
 >- Data types are never nil and need not nil checked
 ```go
 var (
@@ -62,15 +62,15 @@ var (
 fmt.Printf("[v0]: var type = %T; value = %v;\n", v0, v0)
 ```
 >- **Pointer**: stores the memory address of a variable.
->  It provides a way to point to where the memory is located
->  and find the value stored at that address.
->  The * operator (dereferencing operator)
->  The & operator (address operator)
->  Zero value: nil
->  For example: 
+>- It provides a way to point to where the memory is located
+>- and find the value stored at that address.
+>- The * operator (dereferencing operator)
+>- The & operator (address operator)
+>- Zero value: nil
+>- For example: 
 ```go
 var a string = "Hello, World!"
 var prt *string = &a
 var b string = *prt
 ```
-> Operations on nil pointers will cause a runtime error
+>- Operations on nil pointers will cause a runtime error
